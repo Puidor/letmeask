@@ -50,7 +50,7 @@ export function Home() {
   }
 
   return (
-    <div id="page-auth" className={theme}>
+    <div id="page-auth">
       <aside>
         <img
           src={illustrationImg}
@@ -60,7 +60,7 @@ export function Home() {
         <p>Tire as dúvidas da sua audiência em tempo real</p>
       </aside>
 
-      <main>
+      <main className={theme}>
         <div className="main-content">
           {/* Light/Dark Mode */}
           <button onClick={toggleTheme} className="change-theme">

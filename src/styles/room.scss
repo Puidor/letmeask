@@ -110,3 +110,31 @@
     }
   }
 }
+
+@media (max-width: 830px) {
+  #page-room {
+    padding: 2rem;
+
+    .content {
+      flex-direction: column;
+
+      div {
+        flex-direction: column;
+      }
+
+      > img {
+        margin-bottom: 1rem;
+      }
+    }
+
+    main {
+      .room-title {
+        flex-direction: column;
+
+        h1 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

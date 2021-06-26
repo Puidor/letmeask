@@ -3,10 +3,6 @@
   align-items: stretch;
   height: 100vh;
 
-  &.dark {
-    background: #333;
-  }
-
   aside {
     flex: 7;
 
@@ -38,6 +34,10 @@
   }
 
   main {
+    &.dark {
+      background: #333;
+    }
+
     flex: 8;
 
     padding: 0 32px;
@@ -45,6 +45,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding-top: 2rem;
   }
   .change-theme {
     margin-bottom: 64px;
@@ -79,6 +81,8 @@
     max-width: 320px;
     align-items: stretch;
     text-align: center;
+
+    margin-bottom: 2rem;
 
     > img {
       align-self: center;
@@ -166,5 +170,11 @@
       background: #a8a8b3;
       margin-left: 16px;
     }
+  }
+}
+
+@media (max-width: 830px) {
+  #page-auth {
+    display: initial;
   }
 }
