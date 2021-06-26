@@ -3,6 +3,10 @@
   align-items: stretch;
   height: 100vh;
 
+  &.dark {
+    background: #333;
+  }
+
   aside {
     flex: 7;
 
@@ -42,7 +46,32 @@
     align-items: center;
     justify-content: center;
   }
+  .change-theme {
+    margin-bottom: 64px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 500;
+    background: #835afd;
+    color: #fff;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border: 0;
+
+    transition: filter 0.2s;
+    color: white;
+
+    img {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
   .main-content {
     display: flex;
     flex-direction: column;
